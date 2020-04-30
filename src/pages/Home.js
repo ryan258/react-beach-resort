@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-import { Link } from "react-router-dom";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Hero>
         <Banner title="luxurios rooms" subtitle="deluxe rooms starting at $299">
           <Link to="/rooms" className="btn-primary">
@@ -13,7 +14,8 @@ const Home = () => {
           </Link>
         </Banner>
       </Hero>
-    </div>
+      <Services />
+    </React.Fragment>
   );
 };
 
