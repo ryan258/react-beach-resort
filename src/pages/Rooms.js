@@ -6,16 +6,16 @@ import RoomsContainer from "../components/RoomsContainer";
 
 const Rooms = () => {
   return (
-    <React.Fragment>
+    <>
       <Hero hero="roomsHero">
         <Banner title="our rooms">
           <Link to="/" className="btn-primary">
-            Return Home
+            return home
           </Link>
         </Banner>
       </Hero>
       <RoomsContainer />
-    </React.Fragment>
+    </>
   );
 };
 
